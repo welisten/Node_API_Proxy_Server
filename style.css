@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg, #66a0eb, #9adee7, #d7eafc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+#popup{
+    position: absolute;
+    top:  -11vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10vh;
+    width: 40vh;
+    background-color: #f9fbfc3b;
+    border: 1px solid #ffff;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    transition: all 1s ease-in-out;
+    color: #0b055f;
+    box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#popup button{
+    position: inherit;
+    top: 0;
+    right: 0;
+    margin: 1vh;
+    padding: .5vh .6vh;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #d80f0f;
+    background-color: #fff;
+}
+#popup .popup-str{
+    font-size: 1.2rem;
+}
+.container{
+    position: relative;
+    height: 50vh;
+    width: 50vh;
+    background-color: #fff;
+    border: 1px solid #f9fbfc3b;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, .1);
+
+}
+.container .weather{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 5vh 0 1vh;
+    text-align: center;
+}
+.container .weather h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0b055f;
+    margin-bottom: 3vh;
+}
+.container .weather h2{
+    font-size: 4rem;
+    color: #3369ce;
+}
+.container #weather-form{
+    width: 70%;
+}
+#city-input{
+    width: 100%;
+    padding-top: 4vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0b055f85;
+    outline: none;
+    color: #3e7ef5;
+}
+#city-input::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    text-transform: initial;
+    color: #000000;
+}
+#city-input:focus#city-input::placeholder{
+    opacity: 0;
+}
+.weather-btn .fa-solid{
+    transform: translateX(.5vh);
+
+}
+.weather-btn {
+    float: right;
+    transform: translate(5vh, 2vh);
+    padding: 2.4vh;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #0b055f;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #0078d0;
+    border: 0;
+    color: #fff;
+    position: relative;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+.weather-btn:before {
+    background-color: initial;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+    border-radius: 125px;
+    content: "";
+    height: 50%;
+    left: 4%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 92%;
+}
+.weather-btn:hover {
+  -webkit-box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05) translate(5vh, 2vh);
+}
