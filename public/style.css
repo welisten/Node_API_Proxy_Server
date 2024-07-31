@@ -15,11 +15,10 @@ body{
 }
 #popup{
     position: absolute;
-    top:  -11vh;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 10vh;
-    width: 40vh;
+    top:  -150px;
+    right: 5vh;
+    height: 100px;
+    width: 400px;
     background-color: #f9fbfc3b;
     border: 1px solid #ffff;
     border-radius: 15px;
@@ -45,11 +44,11 @@ body{
     background-color: #fff;
 }
 #popup .popup-str{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .container{
     position: relative;
-    height: 50vh;
+    height: 400px;
     width: 50vh;
     background-color: #fff;
     border: 1px solid #f9fbfc3b;
@@ -61,14 +60,13 @@ body{
 
 }
 .container .weather{
-    /* border: 1px solid black; */
     width: 100%;
     margin: 5vh 0 1vh;
     text-align: center;
 }
 .container .weather h1{
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 400;
     color: #0b055f;
     margin-bottom: 3vh;
 }
@@ -83,7 +81,7 @@ body{
     width: 100%;
     padding-top: 4vh;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1.6rem;
     background-color: transparent;
     border: none;

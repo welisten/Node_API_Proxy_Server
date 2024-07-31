@@ -4,8 +4,7 @@ const cityInput = document.querySelector('#city-input')
 
 // Fetch weather data from API
 const fetchWeather =  async (city) => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=97d2115e45d758966be44f66867bf9b1`
-
+    const url = `/api?q=${city}`
     const res = await fetch(url)
     const data = await res.json()
 
@@ -44,7 +43,7 @@ const popupCloseBtn = document.querySelector('.close_btn')
 const popupContainer = document.querySelector('#popup')
 
 popupCloseBtn.addEventListener('click', ()=>{
-    popupContainer.style.top = '-11vh'
+    popupContainer.style.top = '-150px'
 })
 
 weatherForm.addEventListener('submit', (e) => {
