@@ -1,15 +1,15 @@
 # Node.js Proxy Server for Weather API
 
-Este é um projeto de servidor proxy desenvolvido em Node.js, destinado a contornar problemas com a política de CORS (Cross-Origin Resource Sharing) e facilitar o acesso à API de clima. O foco principal do projeto é o back-end, utilizando Express para configurar o servidor e gerenciar as rotas.
+This is a Node.js proxy server project designed to bypass CORS (Cross-Origin Resource Sharing) policy issues and facilitate access to the weather API. The main focus of the project is the back-end, using Express to set up the server and manage routes.
 
-## Funcionalidades
+## Features
 
-- **Proxy Server**: Encaminha requisições para a API de clima, resolvendo problemas de CORS.
-- **Cache**: Implementação de cache com apicache para otimizar a performance das requisições.
-- **Rate Limiting**: Limitação de taxa com express-rate-limit para prevenir abusos.
-- **CORS**: Ativação do CORS para permitir requisições cross-origin.
+- **Proxy Server**: Forwards requests to the weather API, resolving CORS issues.
+- **Cache**: Implemented caching with apicache to optimize request performance.
+- **Rate Limiting**: Rate limiting with express-rate-limit to prevent abuse.
+- **CORS**: Enabled CORS to allow cross-origin requests.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - Node.js
 - Express
@@ -19,36 +19,36 @@ Este é um projeto de servidor proxy desenvolvido em Node.js, destinado a contor
 - needle
 - cors
 
-## Instalação
+## Installation
 
-1. Clone o repositório:
-
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    ```
-
-2. Navegue até o diretório do projeto:
+1. Clone the repository:
 
     ```bash
-    cd seu-repositorio
+    git clone https://github.com/your-username/your-repository.git
     ```
 
-3. Instale as dependências:
+2. Navigate to the project directory:
+
+    ```bash
+    cd your-repository
+    ```
+
+3. Install dependencies:
 
     ```bash
     npm install
     ```
 
-4. Crie um arquivo `.env` na raiz do projeto e adicione suas variáveis de ambiente:
+4. Create a `.env` file in the project root and add your environment variables:
 
     ```env
-    API_BASE_URL=sua_api_base_url
-    API_KEY_NAME=sua_api_key_name
-    API_KEY_VALUE=sua_api_key_value
-    PORT=sua_porta
+    API_BASE_URL=your_api_base_url
+    API_KEY_NAME=your_api_key_name
+    API_KEY_VALUE=your_api_key_value
+    PORT=your_port
     ```
 
-5. Inicie o servidor:
+5. Start the server:
 
     ```bash
     npm start
@@ -56,20 +56,19 @@ Este é um projeto de servidor proxy desenvolvido em Node.js, destinado a contor
 
 ## Endpoints
 
-- `GET /api`: Rota principal que encaminha as requisições para a API de clima.
+- `GET /api`: Main route that forwards requests to the weather API.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `public/`: Contém arquivos estáticos (HTML, CSS, JS).
-- `routes/`: Contém as definições de rotas para o servidor proxy.
-- `.env`: Arquivo que contém as variáveis de ambiente
-- `index.js`: Arquivo principal do servidor.
-- `package.json`: Lista de dependências e scripts do projeto.
+- `public/`: Contains static files (HTML, CSS, JS).
+- `routes/`: Contains route definitions for the proxy server.
+- `index.js`: Main server file.
+- `package.json`: List of dependencies and project scripts.
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Contributions are welcome! Feel free to open issues and pull requests.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a Licença MIT.
+This project is licensed under the MIT License.
